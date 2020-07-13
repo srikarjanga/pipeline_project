@@ -12,5 +12,10 @@ pipeline {
                 echo 'deployed the new application'
             }
         }
+        stage('new_patch') {
+            steps {
+                echo 'fixed the bugs and patch applied'
+            }
+        }
     }
 }
