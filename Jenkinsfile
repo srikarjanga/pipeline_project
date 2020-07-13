@@ -1,5 +1,6 @@
 pipeline {
-agent any {
+    agent any
+
     stages {
         stage('build') {
             steps {
@@ -11,13 +12,5 @@ agent any {
                 echo 'deployed the new application'
             }
         }
-        stage('new version02') {
-            steps {
-                echo 'updated new version 02'
-            }
-        }
     }
-  }   
-    
 }
-
