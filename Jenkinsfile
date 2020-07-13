@@ -1,6 +1,6 @@
-pipeline {
-    agent sr_slave
 
+pipeline {
+node('sr_slave') {
     stages {
         stage('build') {
             steps {
@@ -18,4 +18,5 @@ pipeline {
             }
         }
     }
+  }    
 }
