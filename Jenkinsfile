@@ -1,4 +1,5 @@
-node('sr_slave') {
+pipeline {
+agent any {
     stages {
         stage('build') {
             steps {
@@ -16,5 +17,7 @@ node('sr_slave') {
             }
         }
     }
-  }    
+  }   
+    
+}
 
