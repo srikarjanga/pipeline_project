@@ -1,5 +1,3 @@
-
-pipeline {
 node('sr_slave') {
     stages {
         stage('build') {
@@ -19,4 +17,4 @@ node('sr_slave') {
         }
     }
   }    
-}
+
