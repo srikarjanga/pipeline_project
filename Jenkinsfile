@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent sr_slave
 
     stages {
         stage('build') {
